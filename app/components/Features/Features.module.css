@@ -1,0 +1,133 @@
+.wrap {
+  margin: 150px auto;
+  width: 100%;
+  max-width: 1280px;
+}
+
+
+
+@media (max-width: 1120px) {
+  .wrap {
+    margin: 50px auto;
+    max-width: calc(100% - 20px);
+  }
+}
+
+.main {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+@media (max-width: 768px) {
+  .main {
+    flex-direction: column;
+  }
+}
+
+
+.featureItem {
+  background-color: #ffffff;
+  width: 31%;
+  position: relative;
+  padding: 46px 30px;
+  border-radius: 10px;
+  color: var(--primary-color);
+  transform: translateY(100px);
+  opacity: 0;
+  transition: all 1s;
+}
+
+.featureItem:nth-child(2) {
+  transition-delay: 100ms;
+}
+
+.featureItem:nth-child(3) {
+  transition-delay: 200ms;
+}
+
+.wrapLoaded .featureItem {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .featureItem {
+    width: calc(100% - 40px);
+    margin: 0 auto 20px;
+
+  }
+}
+
+.featureItemHeader {
+  position: relative;
+}
+
+
+.featureItemHeaderTop {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: .5px;
+  padding-left: 64px;
+  position: relative;
+}
+
+@media (max-width: 896px) {
+  .featureItemHeaderTop {
+    font-size: 1.0rem;
+  }
+}
+
+
+
+.featureItemHeaderTop::before {
+  content: attr(data-content);
+  position: absolute;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.6rem;
+  display: block;
+  padding: 14px;
+  left: 0;
+  top: -13px;
+  border-radius: 50%;
+  border: 2px solid var(--primary-color);
+}
+
+.featureItemHeaderMain {
+  font-size: 3.8rem;
+  margin-bottom: 26px;
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .featureItemHeaderMain {
+    font-size: 2.8rem;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .featureItemHeaderMain {
+    font-size: 2.6rem;
+  }
+}
+
+.decoText {
+  position: absolute;
+  top: -27px;
+  right: 10px;
+  color: #A7A7A7;
+  font-size: 13.4rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  opacity: 0.1;
+  line-height: 1.0;
+}
+
+.featureItemMain {
+  line-height: 2.0;
+  font-size: 1.6rem;
+}

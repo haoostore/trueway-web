@@ -1,0 +1,31 @@
+.header {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  width: 100%;
+  background-color: var(--primary-color);
+  z-index: 3;
+}
+
+.gdmLogo {
+  filter: brightness(0) saturate(100%) invert(99%) sepia(55%) saturate(2%) hue-rotate(118deg) brightness(112%) contrast(101%);
+  margin-top: 10px;
+}
+
+/* Tablet and Smaller Desktop */
+@media (min-width: 701px) and (max-width: 1120px) {
+  .header {}
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+  .header {
+    height: 52px;
+  }
+
+  .gdmLogo {
+    height: 30px;
+  }
+}

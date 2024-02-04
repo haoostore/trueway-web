@@ -1,0 +1,63 @@
+.wrap {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  height: 100%;
+}
+
+
+.wrap img:last-of-type {
+  padding-left: 0;
+}
+
+.sliderImage {
+  width: 450px;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+@media (max-width: 1120px) {
+  .sliderImage {
+    width: 270px;
+  }
+}
+
+.container {
+  position: absolute;
+  display: flex;
+  height: 100%;
+}
+
+
+
+.wrap ul {
+  display: flex;
+  list-style: none;
+  animation: swipe var(--speed) linear infinite backwards;
+  padding: 0;
+  margin: 0;
+}
+
+.wrap li {
+  padding-right: 15px;
+}
+
+@media (max-width: 1120px) {
+  .wrap li {
+    padding-right: 5px;
+  }
+}
+
+
+@keyframes swipe {
+  0% {
+    transform: translate(0);
+  }
+
+  100% {
+    transform: translate(-100%);
+  }
+}
+
+/* "Noto Serif TC","Malone Serif",times,"Times New Roman",serif */

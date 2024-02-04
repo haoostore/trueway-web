@@ -1,0 +1,20 @@
+.footerWrap {
+  width: 100%;
+  position: relative;
+  height: 280px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.footerMain {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: .6;
+}
+
+.footerMainLogo {
+  filter: brightness(0) saturate(100%) invert(99%) sepia(55%) saturate(2%) hue-rotate(118deg) brightness(112%) contrast(101%);
+}

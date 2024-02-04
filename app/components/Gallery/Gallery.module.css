@@ -1,0 +1,136 @@
+.galleryWrap {
+  background-color: #1a1a1a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  height: 150vh;
+  position: relative;
+}
+
+@media (max-width: 896px) {
+  .galleryWrap {
+    height: 72.5vh;
+  }
+}
+
+
+.galleryWrap::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: black;
+  left: 0;
+  top: 0;
+  opacity: .3;
+}
+
+.galleryIconWrap {
+  width: 320px;
+  height: 320px;
+  position: absolute;
+  z-index: 2;
+}
+
+@media (max-width: 896px) {
+  .galleryIconWrap {
+    width: 240px;
+    height: 240px;
+  }
+}
+
+.galleryIcon {
+  filter: brightness(0) saturate(100%) invert(99%) sepia(55%) saturate(2%) hue-rotate(118deg) brightness(112%) contrast(101%);
+}
+
+.galleryPhotosWrap {
+  display: flex;
+  gap: 14px;
+  margin-top: 6.25rem;
+}
+
+@media (max-width: 896px) {
+  .galleryPhotosWrap {
+    gap: 10px;
+  }
+}
+
+
+.galleryPhotosColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+@media (max-width: 896px) {
+  .galleryPhotosColumn {
+    gap: 10px;
+  }
+}
+
+
+
+.galleryPhoto {
+  background-image: url("../../../public/dummy.jpg");
+  background-repeat: no-repeat;
+  width: 25.875vw;
+  height: 36.5625vw;
+  border-radius: 15px;
+  object-fit: cover;
+  gap: .8125rem;
+}
+
+@media (max-width: 896px) {
+  .galleryPhoto {
+    width: 42vw;
+    height: 56vw;
+    background-size: auto 160%;
+  }
+}
+
+
+.galleryPhoto02 {
+  background-position: 9.0909090909% 0%;
+}
+
+.galleryPhoto03 {
+  background-position: 18.1818181818% 0%;
+}
+
+.galleryPhoto04 {
+  background-position: 27.2727272727% 0%;
+}
+
+.galleryPhoto05 {
+  background-position: 36.3636363636% 0%;
+}
+
+.galleryPhoto06 {
+  background-position: 45.4545454545% 0%;
+}
+
+.galleryPhoto07 {
+  background-position: 54.5454545455% 0%;
+}
+
+.galleryPhoto08 {
+  background-position: 63.6363636364% 0%;
+}
+
+.galleryPhoto09 {
+  background-position: 72.7272727273% 0%;
+}
+
+.galleryPhoto10 {
+  background-position: 81.8181818182% 0%;
+}
+
+.galleryPhoto11 {
+  background-position: 90.9090909091% 0%;
+}
+
+.galleryPhoto12 {
+  background-position: 100% 0%;
+}

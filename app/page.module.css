@@ -1,0 +1,28 @@
+.main {
+  background-color: var(--primary-color);
+  padding: 80px 0 20px;
+  min-height: 100vh;
+}
+
+@media (max-width: 1120px) {
+  .main {
+    padding: 60px 0 20px;
+  }
+}
+
+.notFoundWrap {
+  width: 90%;
+  margin: 100px auto 0;
+  text-align: center;
+}
+
+.notFoundWrap h2 {
+  text-align: center;
+  font-size: 40px;
+  line-height: 1.6;
+}
+
+.notFoundWrap h3 {
+  font-size: 36px;
+  ;
+}
